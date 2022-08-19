@@ -4,7 +4,7 @@
 
 A library used to review derivatives pricing
 
-Some of key functionalities that Riskfolio-Lib offers:
+Some of key functionalities that dpf offers:
 
 - Analytical formulae for different plain vanilla and exotic options:
 
