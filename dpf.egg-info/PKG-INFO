@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: dpf
+Version: 1.0
+Summary: Derivatives Pricing in Python
+Home-page: https://github.com/thanhuwe8/DerivativesPricing
+Author: Thanh Nguyen
+Author-email: thanhuwe8@gmail.com
+Maintainer: Thanh Nguyen
+Maintainer-email: thanhuwe8@gmail.com
+License: MIT
+Download-URL: https://github.com/thanhuwe8/DerivativesPricing.git
+Project-URL: Documentation, 
+Project-URL: Issues, https://github.com/thanhuwe8/DerivativesPricing/issues
+Keywords: finance,derivatives,quant,pricing,equity
+Platform: UNKNOWN
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Office/Business :: Finance
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+License-File: LICENSE
+
+# DerivativesPricing
+ 
+## Description
+
+A library used to review derivatives pricing
+
+Some of key functionalities that Riskfolio-Lib offers:
+
+- Analytical formulae for different plain vanilla and exotic options:
+
+    - European Option
+    - American Option
+    - Asian Option
+    - Barrier Option 
+    - Knock-in/out option
+
+- Monte-carlo simulation for different stochastic process
+
+    - Arithmetic Brownian Motion
+    - Geometric Brownian Motion
+    - OU process
+    - Vasicek process
+
+
+
