@@ -1,4 +1,4 @@
-from dpf.scripting import BSVanilla
+from dpf.scripting import AnalyticalVanilla
 
 
 #? 1. TESTING dataset form Dan Stefanica 
@@ -11,8 +11,8 @@ t = 0.01
 T = 1.0
 r = 0.0
 
-Call_object = BSVanilla.BlackScholes(type1,S0,K,sigma,t,T,r)
-Put_object = BSVanilla.BlackScholes(type2,S0,K,sigma,t,T,r)
+Call_object = AnalyticalVanilla.BlackScholes(type1,S0,K,sigma,t,T,r)
+Put_object = AnalyticalVanilla.BlackScholes(type2,S0,K,sigma,t,T,r)
 
 
 # Call_object.calculate_all()
@@ -34,8 +34,8 @@ Call_object.vega_value
 
 #? 2. Testing with GRID numpy
 
-Call_object = BSVanilla.BlackScholes(type1,S0,K,sigma,t,T,r)
-Put_object = BSVanilla.BlackScholes(type2,S0,K,sigma,t,T,r)
+Call_object = AnalyticalVanilla.BlackScholes(type1,S0,K,sigma,t,T,r)
+Put_object = AnalyticalVanilla.BlackScholes(type2,S0,K,sigma,t,T,r)
 
 #?
 K = np.linspace(80, 120, 20)
@@ -46,8 +46,8 @@ d2_grid = np.zeros(shape=len(K))
 
 for index, strike in enumerate(K):
     #? get the object 
-    call_option = BSVanilla.BlackScholes(type1,S0,strike,sigma,t,T,r)
-    put_option = BSVanilla.BlackScholes(type2,S0,strike,sigma,t,T,r)
+    call_option = AnalyticalVanilla.BlackScholes(type1,S0,strike,sigma,t,T,r)
+    put_option = AnalyticalVanilla.BlackScholes(type2,S0,strike,sigma,t,T,r)
 
     #? store the data
     call_grid[index] = call_option.value

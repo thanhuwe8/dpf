@@ -1,7 +1,6 @@
 LICENSE
 README.md
 setup.py
-dpf/__init__.py
 dpf/complex.py
 dpf.egg-info/PKG-INFO
 dpf.egg-info/SOURCES.txt

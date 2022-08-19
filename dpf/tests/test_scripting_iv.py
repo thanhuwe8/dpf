@@ -1,4 +1,4 @@
-from dpf.scripting import BSVanilla
+from dpf.scripting import AnalyticalVanilla
 import numpy as np
 
 '''

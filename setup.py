@@ -7,6 +7,7 @@ DESCRIPTION = "Derivatives Pricing in Python"
 with open("README.md", encoding='UTF-8') as fh:
     LONG_DESCRIPTION = fh.read()
 
+
 DISTNAME = 'dpf'
 MAINTAINER = 'Thanh Nguyen'
 MAINTAINER_EMAIL = 'thanhuwe8@gmail.com'
@@ -17,15 +18,17 @@ DOWNLOAD_URL = 'https://github.com/thanhuwe8/DerivativesPricing.git'
 VERSION = '1.0'
 PYTHON_REQUIRES = ">=3.7"
 
+
 INSTALL_REQUIRES = [
     'numpy>=1.17.0',
     'pandas>=1.0.0',
-    'yahoo_fin>=0.8.9.1'
+    'yahoo_fin>=0.8.9.1',
+    'scipy>=1.0.1' 
 ]
 
-PACKAGES = [
-    'dpf'
-]
+# PACKAGES = [
+#     'dpf', 'dpf.scripting'
+# ]
 
 CLASSIFIERS = [
     'Intended Audience :: Financial and Insurance Industry',
@@ -33,7 +36,7 @@ CLASSIFIERS = [
     'Programming Language :: Python :: 3.7',
     'Programming Language :: Python :: 3.8',
     'Programming Language :: Python :: 3.9',
-    'License :: OSI Approved :: BSD License',
+    'License :: MIT License :: MIT License',
     'Topic :: Office/Business :: Finance',
     'Topic :: Scientific/Engineering :: Mathematics',
     'Operating System :: Microsoft',
@@ -45,6 +48,7 @@ CLASSIFIERS = [
 if __name__ == "__main__":
 
     from setuptools import setup
+    import setuptools
 
     import sys
     if sys.version_info[:2] < (3, int(PYTHON_REQUIRES[-1])):
@@ -66,7 +70,7 @@ if __name__ == "__main__":
         download_url=DOWNLOAD_URL,
         python_requires=PYTHON_REQUIRES,
         install_requires=INSTALL_REQUIRES,
-        packages=PACKAGES,
+        packages=setuptools.find_packages(),
         classifiers=CLASSIFIERS,
         project_urls={"Documentation": "",
                     "Issues": "https://github.com/thanhuwe8/DerivativesPricing/issues",

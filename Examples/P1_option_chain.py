@@ -1,4 +1,4 @@
-from dpf.scripting import BSVanilla
+from dpf.scripting import AnalyticalVanilla
 
 import pandas as pd
 import numpy as np
@@ -58,4 +58,10 @@ put_option_3m
 
 put_option_3m.plot(x='Strike', y='Implied Volatility')
 pd.concat([put_option_3m, call_option_3m], axis=1)
+
+
+from inspect import getmembers, isfunction
+
+from dpf import scripting
+
 

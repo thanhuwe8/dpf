@@ -34,7 +34,7 @@ License-File: LICENSE
 
 A library used to review derivatives pricing
 
-Some of key functionalities that Riskfolio-Lib offers:
+Some of key functionalities that dpf offers:
 
 - Analytical formulae for different plain vanilla and exotic options:
 
@@ -50,6 +50,14 @@ Some of key functionalities that Riskfolio-Lib offers:
     - Geometric Brownian Motion
     - OU process
     - Vasicek process
+
+## Installation
+
+Clone the respository into your folder and run below command:
+
+```
+python setup.py install
+```
 
 
 
