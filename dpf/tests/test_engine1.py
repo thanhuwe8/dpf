@@ -1,4 +1,6 @@
-from dpf.scripting import AnalyticalVanilla
+from dpf.engine import AnalyticalVanilla
+import numpy as np
+import pandas as pd
 
 
 #? 1. TESTING dataset form Dan Stefanica 
