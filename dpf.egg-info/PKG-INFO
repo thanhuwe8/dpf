@@ -3,12 +3,12 @@ Name: dpf
 Version: 1.0
 Summary: Derivatives Pricing in Python
 Home-page: https://github.com/thanhuwe8/DerivativesPricing
+Download-URL: https://github.com/thanhuwe8/DerivativesPricing.git
 Author: Thanh Nguyen
 Author-email: thanhuwe8@gmail.com
 Maintainer: Thanh Nguyen
 Maintainer-email: thanhuwe8@gmail.com
 License: MIT
-Download-URL: https://github.com/thanhuwe8/DerivativesPricing.git
 Project-URL: Documentation, 
 Project-URL: Issues, https://github.com/thanhuwe8/DerivativesPricing/issues
 Keywords: finance,derivatives,quant,pricing,equity
@@ -18,7 +18,7 @@ Classifier: Intended Audience :: Science/Research
 Classifier: Programming Language :: Python :: 3.7
 Classifier: Programming Language :: Python :: 3.8
 Classifier: Programming Language :: Python :: 3.9
-Classifier: License :: OSI Approved :: BSD License
+Classifier: License :: MIT License :: MIT License
 Classifier: Topic :: Office/Business :: Finance
 Classifier: Topic :: Scientific/Engineering :: Mathematics
 Classifier: Operating System :: Microsoft
@@ -28,13 +28,13 @@ Requires-Python: >=3.7
 Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
 License-File: LICENSE
 
-# DerivativesPricing
+# DerivativesPricing - dpf
  
 ## Description
 
 A library used to review derivatives pricing
 
-Some of key functionalities that dpf offers:
+Some of available functionalities that dpf offers:
 
 - Analytical formulae for different plain vanilla and exotic options:
 
@@ -58,6 +58,21 @@ Clone the respository into your folder and run below command:
 ```
 python setup.py install
 ```
+
+## Roadmap (to be updated)
+
+- August: Complex Numbers, Analytical pricing engine for Plain Vanilla option pricing
+    - Closed form solution for Greeks 
+    - Numerical Greeks to calculate the sensitivities of the BSM formula
+    - Analytical formulas for American Options
+        - Barone-Adesi and Whaley Approximation
+        - Bjerksund and Stensland Approximation (1993) (2002)
+- September: Local Volatility (Surface calibration, interpolation) 
+- October: Stochastic Volatility and Heston model 
+- November: Interest rate model
+- December: tba
+
+
 
 
 
