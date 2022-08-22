@@ -93,6 +93,9 @@ class BlackScholes:
         return(value)
 
     #! Used to update all derived attributes for option positions
+    def update_dt(self):
+        self.DeltaT = self.diff_t()
+    
     def update_d1(self):
         self.d1 = self.deeone()
     
@@ -108,6 +111,7 @@ class BlackScholes:
         self.value = self.pricing()
 
     def refresh(self):
+        self.update_dt()
         self.update_d1()
         self.update_d2()
         self.update_greeks()

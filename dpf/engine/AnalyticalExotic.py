@@ -1,8 +1,9 @@
 import numpy as np
 import scipy.stats as st
 from copy import deepcopy
-from dpf.scripting.AnalyticalVanilla import BlackScholes
+from dpf.engine.AnalyticalVanilla import BlackScholes
 
 
-class ExoticOption()
+class ExoticOption():
+    pass
 
